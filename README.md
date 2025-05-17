@@ -114,22 +114,5 @@ This project is a modular library system that applies multiple design patterns a
 
 ---
 
-## 📌 Example Scenario
-
-- A user requests to borrow an **eBook** for **10 days**.
-- The `LibraryService` sends a `BookRequest` through the chain:
-  - **LibrarianHandler**: skips (too long)
-  - **ManagerHandler**: handles request and approves
-- If it's a **PremiumBook**, extra behavior is added via `PremiumBookDecerator`.
-
----
-
-## 📦 Future Enhancements
-
-- Implement `ExternalBookAdapter` to support third-party book formats.
-- Add persistence (database or file storage).
-- Add a GUI or REST API on top of the service layer.
-- Implement logging using Observer or Command pattern.
-
 ---
 
